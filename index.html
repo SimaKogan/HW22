@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header class="header">Company"XXXXXXX"</header>
+    <div class="button-action">
+        <button onclick="addEmployee()">Add Employee</button>
+        <button onclick="setAllEmployees()">Show all employees</button>
+        <button onclick="setEmplBySalary()">Show Employees by salary</button>
+    </div>
+    <div class="wrapper">
+        <div id="place-form">
+            <form id="employee-form" onsubmit="onSubmit(event)" class="form-class" >
+                <div class="two-inputs">
+                    <label for="employee-name">Name:</label>
+                    <input type="text" name="employee_name" onchange="onChange(event)" required placeholder="Upper/lowercase whithout space">
+                    <span id="error_employee_name"></span>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" onchange="onChange(event)" placeholder="Enter email" required> 
+                    <span id="error_email"></span>
+                </div>
+                <div class="date-label">
+                    <label>Enter birthdate:</label>
+                    <input type="date" name="birthDate" onchange="onChange(event)" required placeholder="birthdate">
+                    <span id="error_birthDate"></span>
+                </div>
+                
+                <div class="two-inputs">
+                    <label for="department">Choice department:</label>
+                    <select name="department" required>
+                        <option value hidden selected disabled>
+                            --Select Department--
+                        </option>
+                        <option id="option" value="QA">QA</option>
+                        <option id="option" value="Development">Development</option>
+                        <option id="option"  value="Management">Management</option>
+                        <option id="option" value="Audit">Audit</option>
+                    </select>
+                    <span id="error_department"></span>
+                    <label>Enter salary:</label>
+                    <input type="number" name="salary" placeholder="from 1000 to 40000" onchange="onChange(event)" required>
+                    <span id="error_salary"></span>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>  
+                </div>             
+            </form>
+        </div>
+        <section class="section-allEmployees" hidden>
+            <ol class="allEmployees" hidden></ol>
+        </section>
+        <section class="filterSalary"  hidden>
+            <label>Enter interval of salary:</label>
+            <input type="number" name="salaryFrom" onchange="onChange(event)" placeholder="from 0">
+            <input type="number" name="salaryTo" onchange="onChange(event)" placeholder="to 40000">
+            <p class="inform-p"></p>
+            <ol class="emplBySalary" hidden></ol>
+        </section>
+    </div>    
+    
+    <script src="src/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+html{ 
+    background: 
+      linear-gradient(180deg, rgba(248, 184, 139,0) 20%, rgba(250, 203, 250, 0.1) 20%, rgba(248, 184, 139,.1) 40%, rgba(248, 184, 139,.2) 40%, rgba(248, 184, 139,.2) 60%, rgba(248, 184, 139,.4) 60%, rgba(248, 184, 139,.4) 80%, rgba(248, 184, 139,.5) 80%),
+      linear-gradient(45deg, rgba(132, 250, 248, 0.3) 20%, rgba(250, 248, 132,.4) 20%, rgba(156, 250, 132, 0.4) 40%, rgba(250, 248, 132,.5) 40%, rgba(234, 210, 249, 0.5) 60%, rgba(236, 244, 182, 0.6) 60%, rgba(132, 236, 250, 0.6) 80%, rgba(172, 236, 253, 0.7) 80%),
+      linear-gradient(-45deg, rgba(186, 237, 145,0) 20%, rgba(186, 237, 145,.1) 20%, rgba(186, 237, 145,.1) 40%, rgba(186, 237, 145,.2) 40%, rgba(195, 246, 248, 0.2) 60%, rgba(186, 237, 145,.4) 60%, rgba(186, 237, 145,.4) 80%, rgba(186, 237, 145,.6) 80%),
+      linear-gradient(90deg, rgba(178, 206, 254,0) 20%, rgba(178, 206, 254,.3) 20%, rgba(178, 206, 254,.3) 40%, rgba(178, 206, 254,.5) 40%, rgba(178, 206, 254,.5) 60%, rgba(178, 206, 254,.7) 60%, rgba(178, 206, 254,.7) 80%, rgba(178, 206, 254,.8) 80%),
+      linear-gradient(-90deg, rgba(242, 162, 232,0) 20%, rgba(242, 162, 232,.4) 20%, rgba(246, 176, 236, 0.4) 40%, rgba(242, 162, 232,.5) 40%, rgba(242, 162, 232,.5) 60%, rgba(242, 162, 232,.6) 60%, rgba(242, 162, 232,.6) 80%, rgba(242, 162, 232,.8) 80%),
+      linear-gradient(180deg, rgba(254, 163, 170,0) 20%, rgba(254, 163, 170,.4) 20%, rgba(254, 163, 170,.4) 40%, rgba(254, 163, 170,.6) 40%, rgba(254, 163, 170,.6) 60%, rgba(254, 163, 170,.8) 60%, rgba(253, 188, 226, 0.8) 80%, rgba(254, 180, 228, 0.9) 80%)
+  ;
+    background-color: rgb(163, 209, 254);
+    background-size: 100% 100%;
+    min-height: 100%;
+  }
+  
+body{ 
+    height: 90vh;  
+    /* height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+    
+}
+.header {
+    font-size: 1.5em;
+    text-align: center;
+}
+.button-action {
+    text-align: center;
+    margin-top: 5vh;
+
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+div>button {
+    height: 3vh;
+}
+#place-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-style: outset ;
+    box-shadow: 6px 11px #6d79e722;
+    border-radius: 5%;
+    background-color: rgb(252, 243, 229);
+    width: 30vw;
+    
+}
+#employee-form{
+    width:25vw;
+}
+.form-class{
+    display: flex;
+    flex-direction: column;
+}
+.two-inputs{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:15vh;
+    margin-top: 3vh;
+}
+.date-label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    height: 10vh;
+    justify-content: space-around;
+    width:10vw;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 0vh;
+}
+span{
+    font-size: 0.8em;
+    color:red;
+}
+input, select {
+    width: 25vw;
+}
+.section-allEmployees{
+    width: 60vw;
+    max-height: 70vh ;
+    border-style: outset ;
+    box-shadow: 6px 11px #6d79e722;
+    background-color: rgb(252, 243, 229);
+    overflow: auto;
+}
+.allEmployees {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: flex-start;
+}
+.emplBySalary{
+    border-style: outset ;
+    box-shadow: 6px 11px #6d79e722;
+    background-color: rgb(252, 243, 229); 
+    overflow: auto;
+}
